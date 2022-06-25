@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+.clear {
+    clear: both;
+}
+/* class được định nghĩa sẵn */
+.text-white {
+    color: white !important;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 47px;
+    padding: 0 24px;
+    display: block;
+    text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a {
+    background-color: #cccccc;
+    color: black;
+}
+
+#nav .subnav {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav li {
+    display: block;
+}
+
+#nav .subnav a {
+    color: black;
+    padding-left: 17px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 10px;
+}
+
+#header .search-btn {
+    float: right;
+    line-height: 46px; 
+    padding: 0 16px;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+#header .search-icon {
+    color: white;
+    font-size: 16px;
+} 
+
+#nav .subnav li:hover a {
+    background-color: #cccccc;
+    color: black;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/assets/img/759464.jpg) top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+#slider .text-heading {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    margin: auto auto;
+    padding: 64px 0;
+}
+
+#content .section-heading {
+    margin-bottom: 17px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#content .section-sub-heading {
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-style: italic;
+    color: #838383;
+    text-align: center;
+}
+
+#content .menber-name {
+    font-size: 15px;
+}
+
+#content .about-text {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 47px;
+}
+
+#content .member-avatar {
+    width: 154px;
+    margin-top: 15px; 
+    border-radius: 5px;
+}
+
+#content .member-item {
+    float: left;
+    margin-bottom: 112px;
+    width: 33.33333%;
+    text-align: center;
+}
+
+/* Tour section */
+.tour-section {
+    background-color: black;
+}
+
+.ticker-list {
+    background-color: white;
+    margin-top: 41px;
+}
+
+.ticker-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: #dddddd 1px solid;
+}
+
+.ticker-list li .sold-out {
+    padding: 3px 8px; 
+    background-color: #F44336;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.ticker-list li .quantity {
+    float: right;
+    height: 24px;
+    width: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+/* place*/
+.places-list {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 48px;
+}
+
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+.place-body-kyo {
+    background-color: #FFFFFF;
+    padding: 16px;
+    padding-top: 61px;
+
+}
+
+.place-body-bell {
+    background-color: #FFFFFF;
+    padding: 16px;
+    padding-top: 36px;
+
+}
+
+.place-body {
+    background-color: #FFFFFF;
+    padding: 16px;
+}
+
+.place-heading {
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.place-time {
+    margin-bottom: 15px;
+    color: #757575;
+}
+
+.place-dsc {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.place-by-btn:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+.place-by-btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+#footer {
+
+}
