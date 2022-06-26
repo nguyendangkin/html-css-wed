@@ -21,6 +21,13 @@ html {
     margin-right: -8px;
 }
 
+/* Một lớp giả clean tiêu chuẩn và nâng cao so với tạo thẻ div */
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .col {
     float: left;
     padding-left: 8px;
@@ -29,6 +36,8 @@ html {
 
 .col-full {
     width: 100%;
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
 .col-half {
@@ -305,6 +314,54 @@ html {
     padding: 11px 16px;
     display: inline-block;
     font-weight: 500;
+}
+
+.submit-btn {
+    border: none;
+    float: right;
+}
+
+.submit-btn {
+    cursor: pointer;
+}
+
+/* Contact From */
+.contact-content {
+    margin-top: 50px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Css nâng cao. Chọn tất cả các class có chữ "ti-" */
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+
+}
+
+.contact-form {
+    font-size: 15px;
+
+}
+
+.contact-form .form-control {
+    padding: 11px;
+    border: 1px solid #cccccc;
+    width: 100%;
+}
+
+/* Map section */
+
+.map-section {
+    margin-top: 48px;
+}
+
+.map-section img {
+    /* Width 100% thì ảnh luôn bằng thẻ chứa nó */
+    width: 100%;
 }
 
 #footer {

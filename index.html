@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/css/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -121,40 +121,52 @@
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
-                <div class="row">
-                    <div class="col col-half">
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="ti-email"></i>https://Email: mail@mail.com/</p>
+                        <p><i class="ti-mobile"></i>Phone: +00151515</p>
+                        <p><i class="ti-email"></i>https: Email: mail@mail.com</p>
                     </div>
-                    <div class="col col-half">
+                    <!--  -->
+                    <div class="col col-half contact-form">
                         <form action="">
                             <div class="row">
                                 <div class="col col-half">
-                                    <input type="text" placeholder="Name" class="form-control">
+                                    <input type="text" placeholder="Name" required class="form-control">
                                 </div>
                                 <div class="col col-half">
-                                    <input type="email" placeholder="Email" class="form-control">
+                                    <input type="email" placeholder="Email" required class="form-control">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col col-full">
-                                    <input type="text" placeholder="Message" class="form-control">
+                                    <input type="text" placeholder="Message" required class="form-control">
                                 </div>
                             </div>
-                            <input type="submit" value="SEN">
+                            <!-- dùng lại place-by-btn nhưng tên class cảm thấy không đúng -->
+                            <input type="submit" class="submit-btn place-by-btn" value="SEN">
                         </form>
                     </div>
                 </div> 
             </div>
+            <!-- ENd -->
 
+            <div class="map-section">
+                <img src="./assets/img/yourname.jpg" alt="">
+            </div>
 
         </div>
 
         <div id="footer">
-
+            <div class="cosials-list">
+                <a href="#"><i class="ti-facebook">Facebook</i></a>
+                <a href="#"><i class="ti-instagram">Instagram</i></a>
+                <a href="#"><i class="ti-youtube">Youtube</i></a>
+                <a href="#"><i class="ti-printer">Printer</i></a>
+                <a href="#"><i class="ti-twitter">Twitter</i></a>
+                <a href="#"><i class="ti-linkedin">Linkedin</i></a>
+            </div>
         </div>
-
     </div>
 </body>
 </html>
