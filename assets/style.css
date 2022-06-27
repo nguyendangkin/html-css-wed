@@ -362,8 +362,30 @@ html {
 .map-section img {
     /* Width 100% thì ảnh luôn bằng thẻ chứa nó */
     width: 100%;
+    margin-bottom: 66px;
 }
 
 #footer {
-    
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.cosials-list {
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+.cosials-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.cosials-list a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.copyright, .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-size: 15px;
 }
