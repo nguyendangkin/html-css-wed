@@ -390,3 +390,95 @@ html {
     font-weight: 500;
     font-size: 15px;
 }
+
+.modal {
+    /* Nổi và căn 4 góc */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    /* Căn giữa chiều cao */
+    align-items: center; 
+    justify-content: center;
+
+}
+
+.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: white;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-body {
+    margin: 16px;
+}
+
+.modal-label {
+    margin-bottom: 15px;
+    margin-top: 17px;
+    display: block;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 8px;
+}
+
+.modal-close:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    padding: 10px 10px;
+    color: white;
+}
+
+.modal-header {
+    background-color: #009688;
+    display: flex;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+.modal-heading-icon {
+    margin-right: 16px;
+    margin-bottom: 9px;
+}
+
+#buy-tickets:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+#buy-tickets {
+    margin-top: 16px;
+    margin-bottom: 33px;
+    padding: 20px;
+    width: 100%;
+    background-color: #009688;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+
+.modal-footer {
+    text-align: right;
+}
